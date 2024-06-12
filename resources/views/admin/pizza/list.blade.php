@@ -19,9 +19,6 @@
                                     <i class="zmdi zmdi-plus"></i>add item
                                 </button>
                             </a>
-                            <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                CSV download
-                            </button>
                         </div>
                     </div>
                     <div class="container-fluid">

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="login-form">
+<div class="login-form" style="height: auto;">
     <form action="{{ route('register') }}" method="post">
         @csrf
 

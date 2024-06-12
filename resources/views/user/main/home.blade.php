@@ -23,7 +23,7 @@
                         @if($category->subcategories->isNotEmpty())
                             <ul>
                                 @foreach($category->subcategories as $subcategory)
-                                    <li>
+                                    <li class=" list-unstyled">
                                         <a style="color: black;" href="{{ route('user#catfilter', $subcategory->name) }}">
                                             {{ $subcategory->name }}
                                         </a>
@@ -88,7 +88,6 @@
                             <div class="product-img position-relative overflow-hidden">
                                 <img class="img-fluid w-100 img-thumbnail border-0" style="height: 350px; object-fit:cover;" src="{{ asset('storage/'.$p->image) }}" alt="">
                                  <div class="product-action">
-                                    <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('user#pizzalist',$p->id)}}"><i class="fa-solid fa-circle-info"></i></a>
                                 </div>
                             </div>
@@ -142,10 +141,7 @@
                                     <div class="product-img position-relative overflow-hidden">
                                         <img class="img-fluid w-100" style="height: 350px; object-fit:cover;" src="{{ asset('storage/${response[i].image}') }}" alt="">
                                         <div class="product-action">
-                                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-                                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                                            <a class="btn btn-outline-dark btn-square" href="{{ url('user/pizzalist${response[i].id}')}}"><i class="fa-solid fa-circle-info"></i></a>
                                         </div>
                                     </div>
                                     <div class="text-center py-4">

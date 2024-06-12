@@ -61,13 +61,13 @@
 
                         <li>
                             <a href="{{ route('subCategory#list') }}">
-                                <i class="fas fa-bars"></i>Sub Category
+                                <i class="fa-solid fa-list"></i>Sub Category
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ route('product#list') }}">
-                                <i class="fa-sharp fa-solid fa-pizza-slice"></i>Products
+                                <i class="fa-brands fa-product-hunt"></i>Products
                              </a>
                         </li>
                         <li>
