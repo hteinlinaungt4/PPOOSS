@@ -45,7 +45,6 @@ class UserController extends Controller
         });
 
 
-
         return view('user.main.home', compact('categories','products', 'categoriesWithSubcategories', 'cart', 'order'));
     }
 
