@@ -25,7 +25,8 @@
                                     @elseif($o->status == 1)
                                         <span class='text-success'><i class="fa-solid fa-check"></i>  Success...</span>
                                     @elseif($o->status == 2)
-                                        <span class='text-danger'><i class="fa-solid fa-triangle-exclamation"></i>  Reject...</span>
+                                        <div><span class="text-warning">Note</span> <span>Out of Stock</span></div>
+                                        <span class='text-danger'><i class="fa-solid fa-triangle-exclamation"></i>  Reject... </span>
                                     @endif
 
                             </td>
